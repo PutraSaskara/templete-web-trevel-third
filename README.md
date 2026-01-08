@@ -148,7 +148,7 @@ Output di folder `dist/` siap deploy ke Vercel, Netlify, dll.
 
 ## 📜 License
 
-MIT - Bebas digunakan untuk project personal maupun komersial.
+copyright © 2026 Putra Saskara. All rights reserved.
 
 ---
 
