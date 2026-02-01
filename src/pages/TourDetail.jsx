@@ -51,6 +51,17 @@ export default function TourDetail() {
                 description={tour.description}
                 url={`/packages/${tour.slug}`}
                 image={tour.image}
+                tour={{
+                    price: tour.price,
+                    duration: tour.duration,
+                    rating: tour.rating,
+                    location: tour.location
+                }}
+                breadcrumbs={[
+                    { name: 'Home', url: '/' },
+                    { name: 'Packages', url: '/packages' },
+                    { name: tour.title, url: `/packages/${tour.slug}` }
+                ]}
             />
             <div className="min-h-screen pt-24 pb-20">
                 {/* Hero Image */}
@@ -77,7 +88,7 @@ export default function TourDetail() {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* Main Content */}
                         <div className="lg:col-span-2">
-                            <div className="bg-surface border border-white/5 rounded-lg p-8 mb-8">
+                            <div className="bg-surface border border-white/5 rounded-lg p-8 mb-8 animate-fade-in-up">
                                 {/* Tags */}
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {tour.featured && (
@@ -122,7 +133,7 @@ export default function TourDetail() {
 
                             {/* Highlights */}
                             {tour.highlights && tour.highlights.length > 0 && (
-                                <div className="bg-surface border border-white/5 rounded-lg p-8 mb-8">
+                                <div className="bg-surface border border-white/5 rounded-lg p-8 mb-8 animate-fade-in-up stagger-2">
                                     <h2 className="text-2xl font-bold text-white mb-6">Tour Highlights</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         {tour.highlights.map((highlight, index) => (
@@ -139,7 +150,7 @@ export default function TourDetail() {
 
                             {/* Includes */}
                             {tour.includes && tour.includes.length > 0 && (
-                                <div className="bg-surface border border-white/5 rounded-lg p-8">
+                                <div className="bg-surface border border-white/5 rounded-lg p-8 animate-fade-in-up stagger-3">
                                     <h2 className="text-2xl font-bold text-white mb-6">What's Included</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         {tour.includes.map((item, index) => (
@@ -157,7 +168,7 @@ export default function TourDetail() {
 
                         {/* Sidebar - Booking Card */}
                         <div className="lg:col-span-1">
-                            <div className="bg-surface border border-white/5 rounded-lg p-8 sticky top-32">
+                            <div className="bg-surface border border-white/5 rounded-lg p-8 sticky top-32 animate-slide-in-right stagger-2">
                                 <div className="text-center mb-6">
                                     <div className="text-gray-400 text-sm mb-1">Starting from</div>
                                     <div className="text-3xl font-bold text-primary">{tour.price}</div>

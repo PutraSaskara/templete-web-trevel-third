@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://melalibali.com/sitemap.xml
+
+# Disallow admin/private paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Crawl-delay for rate limiting
+Crawl-delay: 1
+
+# Allow search engines to index all pages
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /

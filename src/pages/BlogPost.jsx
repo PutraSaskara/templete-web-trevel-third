@@ -58,11 +58,17 @@ export default function BlogPost() {
                 url={`/blog/${article.slug}`}
                 image={article.image}
                 type="article"
+                keywords={article.category}
                 article={{
                     publishedTime: article.date,
                     author: article.author,
                     tags: article.category ? [article.category] : []
                 }}
+                breadcrumbs={[
+                    { name: 'Home', url: '/' },
+                    { name: 'Blog', url: '/blog' },
+                    { name: article.title, url: `/blog/${article.slug}` }
+                ]}
             />
             <div className="min-h-screen pt-24 pb-20">
                 {/* Hero Image */}
@@ -87,7 +93,7 @@ export default function BlogPost() {
                 {/* Content */}
                 <section className="container mx-auto px-6 md:px-12 -mt-32 relative z-10">
                     <article className="max-w-3xl mx-auto">
-                        <div className="bg-surface border border-white/5 rounded-lg p-8 md:p-12 mb-8">
+                        <div className="bg-surface border border-white/5 rounded-lg p-8 md:p-12 mb-8 animate-fade-in-up">
                             {/* Category Badge */}
                             {article.category && (
                                 <span className="bg-primary/20 text-primary text-xs font-bold uppercase px-3 py-1 rounded mb-4 inline-block">
@@ -147,8 +153,8 @@ export default function BlogPost() {
                 {/* Related Articles */}
                 {relatedArticles.length > 0 && (
                     <section className="container mx-auto px-6 md:px-12 mt-20">
-                        <h2 className="text-2xl font-bold text-white mb-8">Related Articles</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <h2 className="text-2xl font-bold text-white mb-8 animate-slide-in-left stagger-2">Related Articles</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in-up stagger-3">
                             {relatedArticles.map((relatedArticle) => (
                                 <ArticleCard key={relatedArticle.id} article={relatedArticle} />
                             ))}

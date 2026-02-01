@@ -50,10 +50,10 @@ export default function Tours() {
                 </section>
 
                 {/* Filters */}
-                <section className="container mx-auto px-6 md:px-12 mb-12">
+                <section className="container mx-auto px-6 md:px-12 mb-12 animate-fade-in-up stagger-2">
                     <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
                         {/* Search */}
-                        <div className="relative w-full md:w-96">
+                        <div className="relative w-full md:w-96 animate-slide-in-left stagger-3">
                             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                             <input
                                 type="text"
@@ -65,7 +65,7 @@ export default function Tours() {
                         </div>
 
                         {/* Filter Buttons */}
-                        <div className="flex gap-2 flex-wrap justify-center">
+                        <div className="flex gap-2 flex-wrap justify-center animate-slide-in-right stagger-3">
                             {[
                                 { key: 'all', label: 'All' },
                                 { key: 'featured', label: 'Featured' },

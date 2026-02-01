@@ -70,13 +70,13 @@ export default function Contact() {
                 <section className="container mx-auto px-6 md:px-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                         {/* Contact Info */}
-                        <div>
+                        <div className="animate-slide-in-left stagger-2">
                             <h2 className="text-3xl font-bold text-white mb-8">Get In Touch</h2>
                             <p className="text-gray-400 mb-8">
                                 Ready to plan your Bali adventure? Reach out to us through WhatsApp for the fastest response, or fill out the form and we'll get back to you within 24 hours.
                             </p>
 
-                            <div className="space-y-6 mb-8">
+                            <div className="space-y-6 mb-8 animate-fade-in-up stagger-3">
                                 <div className="flex items-start gap-4">
                                     <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
                                         <Phone size={20} />
@@ -131,7 +131,7 @@ export default function Contact() {
                         </div>
 
                         {/* Contact Form */}
-                        <div className="bg-surface border border-white/5 rounded-lg p-8">
+                        <div className="bg-surface border border-white/5 rounded-lg p-8 animate-slide-in-right stagger-2">
                             <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
 
                             <form onSubmit={handleSubmit} className="space-y-6">

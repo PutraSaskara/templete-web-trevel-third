@@ -38,10 +38,10 @@ export default function Blog() {
 
                 {/* Featured Article */}
                 {articles.length > 0 && (
-                    <section className="container mx-auto px-6 md:px-12 mb-16">
+                    <section className="container mx-auto px-6 md:px-12 mb-16 animate-scale-in stagger-2">
                         <Link
                             to={`/blog/${articles[0].slug}`}
-                            className="block relative h-[500px] overflow-hidden rounded-lg group cursor-pointer"
+                            className="block relative h-[500px] overflow-hidden rounded-lg group cursor-pointer hover:shadow-2xl transition-shadow duration-500"
                         >
                             <img
                                 src={articles[0].image}
@@ -77,8 +77,8 @@ export default function Blog() {
 
                 {/* Articles Grid */}
                 <section className="container mx-auto px-6 md:px-12">
-                    <h2 className="text-2xl font-bold text-white mb-8">Latest Articles</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <h2 className="text-2xl font-bold text-white mb-8 animate-slide-in-left stagger-3">Latest Articles</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up stagger-4">
                         {articles.slice(1).map((article) => (
                             <ArticleCard key={article.id} article={article} />
                         ))}
