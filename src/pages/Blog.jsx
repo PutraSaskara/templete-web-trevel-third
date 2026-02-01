@@ -19,7 +19,7 @@ export default function Blog() {
                 <section className="relative h-[40vh] min-h-[300px] flex items-center overflow-hidden mb-12">
                     <div className="absolute inset-0">
                         <img
-                            src="https://images.unsplash.com/photo-1523413363572-3c7d81c746d4?q=80&w=2070&auto=format&fit=crop"
+                            src={blog.heroImage}
                             alt="Bali Blog"
                             className="w-full h-full object-cover brightness-50"
                         />

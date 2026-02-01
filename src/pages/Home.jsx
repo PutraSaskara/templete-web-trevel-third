@@ -169,7 +169,7 @@ export default function Home() {
                     <section className="relative min-h-screen flex items-center bg-gray-900 overflow-hidden py-20">
                         <div className="absolute inset-0 z-0">
                             <img
-                                src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=2070&auto=format&fit=crop"
+                                src={testimonials.backgroundImage}
                                 alt="Bali Temple"
                                 className="w-full h-full object-cover opacity-40"
                             />
@@ -211,40 +211,25 @@ export default function Home() {
                                 </div>
 
                                 <div className="hidden md:flex flex-col gap-6">
-                                    <div className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer border border-white/10 h-64 transform hover:-translate-x-2 transition-transform">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=2070&auto=format&fit=crop"
-                                            alt="Rice Terrace"
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                        />
-                                        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                                            <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
-                                                <Play className="text-white ml-1" size={32} />
+                                    {testimonials.gallery.map((item, index) => (
+                                        <div key={index} className={`relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer border border-white/10 h-64 ${index === 1 ? 'mr-12' : ''} transform hover:-translate-x-2 transition-transform`}>
+                                            <img
+                                                src={item.image}
+                                                alt={item.label}
+                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            />
+                                            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                                                <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
+                                                    <Play className="text-white ml-1" size={32} />
+                                                </div>
+                                            </div>
+                                            <div className="absolute bottom-4 left-4">
+                                                <span className="text-white text-xs font-bold uppercase tracking-wider bg-black/50 px-2 py-1 rounded">
+                                                    {item.label}
+                                                </span>
                                             </div>
                                         </div>
-                                        <div className="absolute bottom-4 left-4">
-                                            <span className="text-white text-xs font-bold uppercase tracking-wider bg-black/50 px-2 py-1 rounded">
-                                                Rice Terraces
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer border border-white/10 h-64 mr-12 transform hover:-translate-x-2 transition-transform">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2038&auto=format&fit=crop"
-                                            alt="Temple"
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                        />
-                                        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                                            <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform">
-                                                <Play className="text-white ml-1" size={32} />
-                                            </div>
-                                        </div>
-                                        <div className="absolute bottom-4 left-4">
-                                            <span className="text-white text-xs font-bold uppercase tracking-wider bg-black/50 px-2 py-1 rounded">
-                                                Temple Views
-                                            </span>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>

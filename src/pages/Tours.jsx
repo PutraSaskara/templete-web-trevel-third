@@ -6,6 +6,7 @@ import { Search, Filter } from 'lucide-react';
 
 export default function Tours() {
     const { tours } = siteConfig;
+    const { tours: toursPage } = siteConfig.pages;
     const [searchQuery, setSearchQuery] = useState('');
     const [filter, setFilter] = useState('all');
 
@@ -23,8 +24,8 @@ export default function Tours() {
     return (
         <>
             <SEO
-                title="Full Day Bali Tours & Packages"
-                description="Discover our curated full-day Bali tours. From Ubud cultural immersion to Nusa Penida adventures, explore authentic Balinese experiences with local guides."
+                title={toursPage.seo.title}
+                description={toursPage.seo.description}
                 url="/packages"
             />
             <div className="min-h-screen pt-32 pb-20">
@@ -32,7 +33,7 @@ export default function Tours() {
                 <section className="relative h-[40vh] min-h-[300px] flex items-center overflow-hidden mb-12">
                     <div className="absolute inset-0">
                         <img
-                            src="https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?q=80&w=1974&auto=format&fit=crop"
+                            src={toursPage.heroImage}
                             alt="Bali Tours"
                             className="w-full h-full object-cover brightness-50"
                         />
@@ -41,10 +42,10 @@ export default function Tours() {
 
                     <div className="relative z-10 container mx-auto px-6 md:px-12 text-center">
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">
-                            Explore Full Day Tours
+                            {toursPage.title}
                         </h1>
                         <p className="text-xl text-gray-300 max-w-2xl mx-auto animate-fade-in-up stagger-1">
-                            Discover authentic Balinese experiences curated by local experts
+                            {toursPage.subtitle}
                         </p>
                     </div>
                 </section>

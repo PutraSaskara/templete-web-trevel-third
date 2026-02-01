@@ -45,7 +45,7 @@ export default function About() {
                                 {about.description}
                             </p>
                             <p className="text-gray-400 leading-relaxed mb-8">
-                                Our team of local guides, travel experts, and hospitality professionals work together to create journeys that go beyond typical tourism. We connect you with local artisans, take you to hidden temples, and introduce you to the warm hearts of Balinese families.
+                                {about.storyText}
                             </p>
                             <Link to="/contact" className="btn-primary inline-block">
                                 Get In Touch
@@ -54,7 +54,7 @@ export default function About() {
 
                         <div className="relative">
                             <img
-                                src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=2070&auto=format&fit=crop"
+                                src={about.secondaryImage}
                                 alt="Bali Rice Terraces"
                                 className="rounded-lg shadow-2xl"
                             />
@@ -81,37 +81,20 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* Values Section */}
                     <div className="mb-20">
                         <h2 className="text-3xl font-bold text-white text-center mb-12">Our Values</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div className="bg-surface border border-white/5 rounded-lg p-8 text-center card-hover">
-                                <div className="text-primary mb-4 flex justify-center">
-                                    {getIcon('Heart', { size: 40 })}
+                            {about.values.map((value, index) => (
+                                <div key={index} className="bg-surface border border-white/5 rounded-lg p-8 text-center card-hover">
+                                    <div className="text-primary mb-4 flex justify-center">
+                                        {getIcon(value.icon, { size: 40 })}
+                                    </div>
+                                    <h3 className="text-white text-xl font-bold mb-3">{value.title}</h3>
+                                    <p className="text-gray-400">
+                                        {value.description}
+                                    </p>
                                 </div>
-                                <h3 className="text-white text-xl font-bold mb-3">Authentic Experiences</h3>
-                                <p className="text-gray-400">
-                                    We believe in real connections with local culture, not manufactured tourist attractions.
-                                </p>
-                            </div>
-                            <div className="bg-surface border border-white/5 rounded-lg p-8 text-center card-hover">
-                                <div className="text-primary mb-4 flex justify-center">
-                                    {getIcon('Leaf', { size: 40 })}
-                                </div>
-                                <h3 className="text-white text-xl font-bold mb-3">Sustainable Tourism</h3>
-                                <p className="text-gray-400">
-                                    Every tour supports local communities and preserves Bali's natural beauty for generations.
-                                </p>
-                            </div>
-                            <div className="bg-surface border border-white/5 rounded-lg p-8 text-center card-hover">
-                                <div className="text-primary mb-4 flex justify-center">
-                                    {getIcon('Users', { size: 40 })}
-                                </div>
-                                <h3 className="text-white text-xl font-bold mb-3">Local Expertise</h3>
-                                <p className="text-gray-400">
-                                    Our guides are born and raised in Bali, offering insights that no guidebook can provide.
-                                </p>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </section>

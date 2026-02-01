@@ -45,7 +45,7 @@ export const siteConfig = {
             titleTemplate: "%s | MelaliBali",
             defaultDescription: "Experience Bali with full-day curated tours. Authentic cultural immersion, breathtaking landscapes, and local expert guides. Book your Bali adventure today!",
             siteUrl: "https://melalibali.com",
-            defaultImage: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=2072&auto=format&fit=crop",
+            defaultImage: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             twitterHandle: "@melalibali",
             locale: "en_US",
             type: "website",
@@ -57,7 +57,7 @@ export const siteConfig = {
                 title: "MELALIBALI",
                 subtitle: "WANDER IN BALI",
                 description: "Experience the magic of Bali with full-day curated tours, authentic cultural immersion, and breathtaking landscapes with local expert guides.",
-                image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=2072&auto=format&fit=crop",
+                image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
                 cta: [
                     { label: "Explore Full Day Tours", href: "/packages", variant: "primary" },
                     { label: "Bali Travel Guide", href: "/blog", variant: "outline" }
@@ -79,10 +79,15 @@ export const siteConfig = {
             },
             testimonials: {
                 title: "What our travelers say about our full day tours",
+                backgroundImage: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
                 items: [
-                    { name: "Sarah Mitchell", rating: 5, text: "The full day Ubud tour was incredible! We saw so much without feeling rushed.", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" },
-                    { name: "James Chen", rating: 5, text: "Perfectly organized 12-hour tour. Every detail was expertly handled.", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" },
-                    { name: "Emma Wilson", rating: 5, text: "The guide's knowledge made the long day fly by. So much culture in one day!", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" },
+                    { name: "Sarah Mitchell", rating: 5, text: "The full day Ubud tour was incredible! We saw so much without feeling rushed.", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" },
+                    { name: "James Chen", rating: 5, text: "Perfectly organized 12-hour tour. Every detail was expertly handled.", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" },
+                    { name: "Emma Wilson", rating: 5, text: "The guide's knowledge made the long day fly by. So much culture in one day!", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" },
+                ],
+                gallery: [
+                    { image: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", label: "Rice Terraces" },
+                    { image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", label: "Temple Views" }
                 ]
             },
             bookingSteps: {
@@ -98,21 +103,43 @@ export const siteConfig = {
             title: "About MelaliBali",
             subtitle: "Wander through Bali with local experts.",
             description: "Founded by Balinese locals in 2014, MelaliBali specializes in full-day immersive tours that showcase the authentic beauty of our island. We believe in respectful tourism that honors Balinese traditions while providing unforgettable full-day experiences.",
-            image: "https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+            secondaryImage: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            storyText: "Our team of local guides, travel experts, and hospitality professionals work together to create journeys that go beyond typical tourism. We connect you with local artisans, take you to hidden temples, and introduce you to the warm hearts of Balinese families.",
             stats: [
                 { label: "Years in Bali Tourism", value: "12+" },
                 { label: "Full Day Tour Options", value: "30+" },
                 { label: "Local Guides", value: "50+" }
+            ],
+            values: [
+                { title: "Authentic Experiences", description: "We believe in real connections with local culture, not manufactured tourist attractions.", icon: "Heart" },
+                { title: "Sustainable Tourism", description: "Every tour supports local communities and preserves Bali's natural beauty for generations.", icon: "Leaf" },
+                { title: "Local Expertise", description: "Our guides are born and raised in Bali, offering insights that no guidebook can provide.", icon: "Users" }
             ]
         },
         blog: {
             title: "Bali Travel Blog",
-            subtitle: "Culture, temples, food, hidden gems, and travel tips for Bali."
+            subtitle: "Culture, temples, food, hidden gems, and travel tips for Bali.",
+            heroImage: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+        },
+        tours: {
+            title: "Explore Full Day Tours",
+            subtitle: "Discover authentic Balinese experiences curated by local experts",
+            heroImage: "https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+            seo: {
+                title: "Full Day Bali Tours & Packages",
+                description: "Discover our curated full-day Bali tours. From Ubud cultural immersion to Nusa Penida adventures, explore authentic Balinese experiences with local guides."
+            }
         },
         contact: {
             title: "Contact Us",
             description: "Let us help you plan your perfect full day Bali experience.",
-            buttonText: "Chat on WhatsApp"
+            heroImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+            buttonText: "Chat on WhatsApp",
+            introText: "Ready to plan your Bali adventure? Reach out to us through WhatsApp for the fastest response, or fill out the form and we'll get back to you within 24 hours.",
+            email: "hello@melalibali.com",
+            address: "Jl. Raya Ubud No. 88, Ubud, Bali 80571",
+            workingHours: "Mon - Sun: 08:00 - 20:00 WITA"
         }
     },
     tours: [
@@ -125,7 +152,7 @@ export const siteConfig = {
             rating: "4.9 (2.1k)",
             location: "Ubud, Bali",
             duration: "10 hours",
-            image: "https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?q=80&w=2074&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "A comprehensive full-day cultural journey through Ubud's most iconic temples, rice terraces, traditional arts, and spiritual sites.",
             highlights: ["Sacred Monkey Forest", "Tegalalang Rice Terraces", "Tirta Empul Water Temple", "Traditional Dance Show", "Ubud Art Market", "Lunch at Local Warung"],
             featured: true,
@@ -140,7 +167,7 @@ export const siteConfig = {
             rating: "4.8 (1.8k)",
             location: "Nusa Penida, Bali",
             duration: "12 hours",
-            image: "https://images.unsplash.com/photo-1552465011-b4e30bf7349d?q=80&w=2069&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "Explore Nusa Penida's breathtaking cliffs, beaches, and viewpoints in this full-day island adventure with snorkeling and lunch.",
             highlights: ["Kelingking Beach Viewpoint", "Angel's Billabong", "Broken Beach", "Crystal Bay Snorkeling", "Lunch with Ocean View", "Diamond Beach"],
             featured: true,
@@ -155,7 +182,7 @@ export const siteConfig = {
             rating: "4.9 (1.6k)",
             location: "East Bali",
             duration: "9 hours",
-            image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?q=80&w=2073&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "Discover East Bali's most sacred temples, traditional villages, and stunning coastline in this spiritual full-day journey.",
             highlights: ["Lempuyang Temple (Gates of Heaven)", "Tirta Gangga Water Palace", "Traditional Amed Village", "Virgin Beach Visit", "Local Coffee Tasting", "Traditional Lunch"],
             featured: true,
@@ -170,7 +197,7 @@ export const siteConfig = {
             rating: "4.7 (1.4k)",
             location: "North Bali",
             duration: "10 hours",
-            image: "https://images.unsplash.com/photo-1526392587636-9a0e8a0e5c6a?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
             description: "Escape to Bali's cool northern highlands featuring waterfalls, volcanic lakes, traditional markets, and mountain temples.",
             highlights: ["Gitgit Waterfall", "Ulun Danu Beratan Temple", "Bedugul Traditional Market", "Wanagiri Hidden Hills", "Jatiluwih Rice Terrace View", "Coffee Plantation"],
             featured: true,
@@ -185,7 +212,7 @@ export const siteConfig = {
             rating: "4.8 (980)",
             location: "West Bali",
             duration: "11 hours",
-            image: "https://images.unsplash.com/photo-1550347526-8618ee80ff4e?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
             description: "A full day exploring Bali's wild west including national park wildlife, mangrove forests, and pristine beaches.",
             highlights: ["Bali Barat National Park Safari", "Menjangan Island Snorkeling", "Mangrove Forest Canoeing", "Pulaki Temple Visit", "Local Seafood Lunch", "Deer Sanctuary"],
             featured: false,
@@ -200,7 +227,7 @@ export const siteConfig = {
             rating: "4.8 (1.2k)",
             location: "South Bali",
             duration: "8 hours",
-            image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "Explore Bali's stunning southern coastline featuring famous beaches, dramatic cliffs, and cultural performances.",
             highlights: ["Uluwatu Temple & Cliffs", "Padang Padang Beach", "Jimbaran Bay Seafood Lunch", "GWK Cultural Park", "Kecak Fire Dance", "Dreamland Beach"],
             featured: false,
@@ -215,7 +242,7 @@ export const siteConfig = {
             rating: "4.9 (1.3k)",
             location: "Central Bali",
             duration: "12 hours",
-            image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1517088455889-bfa75135412c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "Witness Bali's volcanic majesty with sunrise trekking, hot springs, and lake adventures in this active day tour.",
             highlights: ["Mount Batur Sunrise Trek", "Volcanic Steam Cooking", "Lake Batur Boat Tour", "Natural Hot Springs", "Coffee Plantation Visit", "Volcanic Garden"],
             featured: true,
@@ -230,7 +257,7 @@ export const siteConfig = {
             rating: "4.7 (890)",
             location: "Various Villages",
             duration: "9 hours",
-            image: "https://images.unsplash.com/photo-1562887189-e5d078343de4?q=80&w=2074&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "Immerse yourself in Bali's artistic heritage visiting traditional craft villages and witnessing artisans at work.",
             highlights: ["Celuk Silver Village", "Mas Woodcarving Village", "Batuan Painting Village", "Sukawati Art Market", "Traditional Craft Workshop", "Local Artist Meet"],
             featured: false,
@@ -245,7 +272,7 @@ export const siteConfig = {
             rating: "4.9 (1.1k)",
             location: "Various Locations",
             duration: "8 hours",
-            image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1971&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "A gastronomic journey through Bali's traditional markets, cooking classes, and authentic local eateries.",
             highlights: ["Morning Market Visit", "Spice Garden Tour", "Traditional Cooking Class", "Warung Food Crawl", "Coffee & Luwak Experience", "Recipe Booklet"],
             featured: false,
@@ -260,7 +287,7 @@ export const siteConfig = {
             rating: "4.8 (1.4k)",
             location: "North & Central Bali",
             duration: "10 hours",
-            image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?q=80&w=1974&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
             description: "Discover Bali's most spectacular waterfalls, hidden canyons, and natural swimming pools in this adventurous day tour.",
             highlights: ["Sekumpul Waterfall (Tallest in Bali)", "Gitgit Waterfall", "Tibumana Hidden Waterfall", "Natural Swimming Pools", "Jungle Trekking", "Traditional Village Visit"],
             featured: true,
@@ -300,7 +327,7 @@ export const siteConfig = {
             author: "Dr. Alexandra Chen",
             category: "Culture & Spirituality",
             readTime: "8 min",
-            image: "https://images.unsplash.com/photo-1523413363572-3c7d81c746d4?q=80&w=2070&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "2",
@@ -330,7 +357,7 @@ export const siteConfig = {
             author: "Isabella Rossi",
             category: "Food & Dining",
             readTime: "6 min",
-            image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1971&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "3",
@@ -355,7 +382,7 @@ export const siteConfig = {
             author: "Ketut Wijaya",
             category: "Culture & Traditions",
             readTime: "7 min",
-            image: "https://images.unsplash.com/photo-1562887189-e5d078343de4?q=80&w=2074&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1562887189-e5d078343de4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "4",
@@ -383,7 +410,7 @@ export const siteConfig = {
             author: "Marcus Thorne",
             category: "Adventure & Nature",
             readTime: "5 min",
-            image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?q=80&w=1974&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "5",
@@ -411,7 +438,7 @@ export const siteConfig = {
             author: "Dr. Alexandra Chen",
             category: "Arts & Culture",
             readTime: "6 min",
-            image: "https://images.unsplash.com/photo-1562887189-e5d078343de4?q=80&w=2074&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1562887189-e5d078343de4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "6",
@@ -441,7 +468,7 @@ export const siteConfig = {
             author: "Environmental Bali Group",
             category: "Sustainable Travel",
             readTime: "5 min",
-            image: "https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "7",
@@ -465,7 +492,7 @@ export const siteConfig = {
             author: "Ketut Wijaya",
             category: "Wellness & Health",
             readTime: "6 min",
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "8",
@@ -495,7 +522,7 @@ export const siteConfig = {
             author: "Family Travel Experts",
             category: "Family Travel",
             readTime: "5 min",
-            image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2070&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "9",
@@ -520,7 +547,7 @@ export const siteConfig = {
             author: "Dr. Alexandra Chen",
             category: "Architecture & Design",
             readTime: "7 min",
-            image: "https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?q=80&w=2074&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: "10",
@@ -548,7 +575,7 @@ export const siteConfig = {
             author: "Cultural Calendar Team",
             category: "Events & Festivals",
             readTime: "6 min",
-            image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?q=80&w=2073&auto=format&fit=crop"
+            image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         }
     ]
 };

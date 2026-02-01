@@ -49,7 +49,7 @@ export default function Contact() {
                 <section className="relative h-[40vh] min-h-[300px] flex items-center overflow-hidden mb-20">
                     <div className="absolute inset-0">
                         <img
-                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2038&auto=format&fit=crop"
+                            src={contact.heroImage}
                             alt="Contact Us"
                             className="w-full h-full object-cover brightness-50"
                         />
@@ -73,7 +73,7 @@ export default function Contact() {
                         <div className="animate-slide-in-left stagger-2">
                             <h2 className="text-3xl font-bold text-white mb-8">Get In Touch</h2>
                             <p className="text-gray-400 mb-8">
-                                Ready to plan your Bali adventure? Reach out to us through WhatsApp for the fastest response, or fill out the form and we'll get back to you within 24 hours.
+                                {contact.introText}
                             </p>
 
                             <div className="space-y-6 mb-8 animate-fade-in-up stagger-3">
@@ -93,7 +93,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-white font-medium mb-1">Email</h3>
-                                        <p className="text-gray-400">hello@melalibali.com</p>
+                                        <p className="text-gray-400">{contact.email}</p>
                                     </div>
                                 </div>
 
@@ -103,7 +103,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-white font-medium mb-1">Office</h3>
-                                        <p className="text-gray-400">Jl. Raya Ubud No. 88, Ubud, Bali 80571</p>
+                                        <p className="text-gray-400">{contact.address}</p>
                                     </div>
                                 </div>
 
@@ -113,7 +113,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-white font-medium mb-1">Working Hours</h3>
-                                        <p className="text-gray-400">Mon - Sun: 08:00 - 20:00 WITA</p>
+                                        <p className="text-gray-400">{contact.workingHours}</p>
                                     </div>
                                 </div>
                             </div>
